@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    }
+    
+    .slider-container {
+        max-width: 100%;
+        margin: 0 auto;
+        background-color: #ccc;
+    }
+    
+    .slider {
+        height: 600px;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .slider_inner {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 0;
+        top: 0;
+        transition: all 1s ease;
+    }
+    
+    .slider-elem{
+        width: 100%;
+        min-width: 100%;
+        height: 100%;
+        position: relative;
+        margin: 0;
+    }
+    
+    .slider-elem img {
+        min-width: 100%;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    
+    .button-slider {
+        position: absolute;
+        z-index: 99;
+        top: 50%;
+        transform: translate(0, -50%);
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 70px; 
+    }
+    
+    .button-slider img {
+        cursor: pointer;
+    }
+    
+    .button-right {
+    right: 0;
+    }
+    
+    .button-left {
+    left: 0;
+    display: none;
+    }
+
+
+    @media (max-width:1300px){
+        .slider-elem img {
+            width: 100%;
+            height:100%;
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .slider, .slider-block {
+            height: 500px;
+        }
+        .slider-container {
+            background-color: #fff;
+        }
+        
+    }
+    
+    @media (max-width:750px){
+        .kostul {
+            height:500px;
+        }
+    }
+
+    @media (max-width:700px) {
+        .slider, .slider-block {
+            height: 500px;
+        }
+    }
+
+    @media (max-width:600px) {
+        .slider, .slider-block {
+            height: 400px;
+        }
+    }
+
+    @media (max-width:500px) {
+        .slider, .slider-block {
+            height: 300px;
+        }
+        .kostul {
+            height:300px;
+        }
+    }
+
+    @media (max-width:400px) {
+        .slider, .slider-block {
+            height: 250px;
+        }
+    }
